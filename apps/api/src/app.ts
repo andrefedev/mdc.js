@@ -1,4 +1,4 @@
-import { publicProcedure, router } from "./trpc";
+import { publicProcedure, router } from "./trpc.ts";
 
 export const appRouter = router({
 	greeting: publicProcedure.query(() => "hello tRPC v10!"),

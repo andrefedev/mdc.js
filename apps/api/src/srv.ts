@@ -1,6 +1,6 @@
 // Export type router type signature, this is used by the client.
 import cors from "cors";
-import { appRouter } from "@/app.js";
+import { appRouter } from "./app.ts";
 import { createHTTPServer } from "@trpc/server/adapters/standalone";
 
 const allowedOrigins = new Set([
@@ -24,4 +24,4 @@ const server = createHTTPServer({
 
 server.listen(3000);
 
-console.log(`hello world ${300}`);
+console.log(`hello world ${3000}`);
