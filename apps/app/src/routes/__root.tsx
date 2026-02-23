@@ -1,9 +1,14 @@
 import { TanStackDevtools } from "@tanstack/react-devtools";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 
-import { Outlet, createRootRoute } from "@tanstack/react-router";
+import { Outlet, createRootRouteWithContext } from "@tanstack/react-router";
 
 // import "../styles.css";
+
+// Importa SOLO el tipo del cliente (sin runtime import)
+type RouterContext = {
+	trpc: typeof import("../lib/trpc").trpc;
+};
 
 const RootComponent = () => {
 	return (
@@ -25,4 +30,6 @@ const RootComponent = () => {
 	);
 };
 
-export const Route = createRootRoute({ component: RootComponent });
+export const Route = createRootRouteWithContext<RouterContext>()({
+	component: RootComponent,
+});

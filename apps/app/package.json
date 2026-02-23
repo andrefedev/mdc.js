@@ -5,19 +5,24 @@
 	"scripts": {
 		"build": "vite build",
 		"preview": "vite preview",
-		"development": "vite dev --port 3000"
+		"development": "vite dev"
 	},
 	"dependencies": {
 		"@tanstack/react-router": "^1.161.1",
+		"cors": "^2.8.6",
 		"react": "^19.2.4",
 		"react-dom": "^19.2.4"
 	},
 	"devDependencies": {
+		"@mdc/trpc": "^1.0.0",
 		"@tailwindcss/vite": "^4.2.0",
 		"@tanstack/devtools-vite": "^0.5.1",
 		"@tanstack/react-devtools": "^0.9.6",
 		"@tanstack/react-router-devtools": "^1.161.1",
 		"@tanstack/router-plugin": "^1.161.1",
+		"@trpc/client": "^11.10.0",
+		"@trpc/tanstack-react-query": "^11.10.0",
+		"@types/cors": "^2.8.19",
 		"@types/node": "^25.2.3",
 		"@types/react": "^19.2.14",
 		"@types/react-dom": "^19.2.3",

@@ -1,19 +1,21 @@
 {
-  "name": "mdc",
-  "type": "module",
-  "version": "1.0.0",
-  "author": "Andres Osorio",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
-  "devDependencies": {
-    "@biomejs/biome": "^2.4.2",
-    "eslint": "^10.0.0",
-    "prettier": "^3.8.1",
-    "typescript": "^5.9.3"
-  }
+	"name": "mdc",
+	"type": "module",
+	"version": "1.0.0",
+	"author": "Andres Osorio",
+	"scripts": {
+		"api:dev": "npm -w @mdc/api run dev:serve",
+		"app:dev": "npm -w @mdc/app run development",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.2",
+		"eslint": "^10.0.0",
+		"prettier": "^3.8.1",
+		"typescript": "^5.9.3"
+	}
 }

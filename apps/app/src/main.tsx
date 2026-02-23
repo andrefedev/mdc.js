@@ -1,3 +1,4 @@
+import { trpc } from "./lib/trpc";
 import { routeTree } from "./routeTree.gen";
 
 import ReactDOM from "react-dom/client";
@@ -5,6 +6,7 @@ import { RouterProvider, createRouter } from "@tanstack/react-router";
 
 const router = createRouter({
 	routeTree,
+	context: { trpc },
 	defaultPreload: "intent",
 	scrollRestoration: true,
 });

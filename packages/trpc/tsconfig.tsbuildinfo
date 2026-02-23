@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/cmd/app.ts","./src/cmd/trpc.ts","./src/domain/app.domain.ts","./src/domain/data.domain.ts","./src/domain/model.domain.ts"],"errors":true,"version":"5.9.3"}
